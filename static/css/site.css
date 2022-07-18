@@ -1,0 +1,42 @@
+body{
+    background-color: #e6e3dc;
+}
+.menu-bar{
+    display: flow-root;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: rgb(207, 222, 207);
+}
+h3{
+    margin-left: 2%;
+}
+.logo{
+    margin-left: -9%;
+}
+h4{
+    color:rgb(83, 120, 83)
+}
+.table{
+    margin-left: -9%;
+}
+.status{
+    font-size: 20px;
+}
+.status-on{
+    padding: 3%;
+    background-color:#368e3d;
+    color: rgb(235, 229, 229);
+    border-radius: 4px;
+}
+.status-off{
+    padding: 3%;
+    background-color:#676565;
+    color: rgb(235, 229, 229);
+    border-radius: 4px;
+}
+thead{
+    background-color: #ecf0f5;
+}
+.table{
+    padding: 3%;
+}

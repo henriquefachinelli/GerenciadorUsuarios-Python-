@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Bitflowin{% endblock %}
+{% block Empresa %}Bitflowin{% endblock %}
+   
+{% block content %} 
+<!--<div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitches">
+  <label class="custom-control-label" for="customSwitches"></label>
+</div>-->
+
+</br>
+
+    <h3>Pipeline(s)</h1>
+    </br>
+        <table style="width: 93%; height:auto; line-height: 35px;">
+            <thead>
+              <tr>
+                <th scope="col">Status</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Empresa</th>
+                <th scope="col">data da criação</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for caso in prod %}
+                    <tr>
+                        <th>
+                          {% if caso.status %}
+                            <h class="status-on">On</h>
+                          {% else %}
+                            <h class="status-off">Off</h>
+                          {% endif %}
+                        </th>
+                        <th>{{caso.nome_pipeline}}</th>
+                        <th>{{caso.empresa}}</th>
+                        <th>{{caso.dt_criacao}}</th>                      
+                    </tr>
+                    
+              {% endfor %}
+            </tbody>
+          </table>        
+
+{% endblock %}
